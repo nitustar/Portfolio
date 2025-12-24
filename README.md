@@ -5,13 +5,13 @@ A modern, responsive portfolio website built with Django to showcase my skills a
 
 ![Python](https://img.shields.io/badge/Python-3.10+-blue)
 ![Django](https://img.shields.io/badge/Django-4.2+-green)
-![License](https://img.shields.io/badge/License-MIT-yellow)
 
 ---
 
 ## 🖼️ Preview
 
-![Portfolio Screenshot](screenshots/preview.png)
+![Portfolio Screenshot]
+<img width="1862" height="877" alt="image" src="https://github.com/user-attachments/assets/ba2bf4a9-ee12-45b4-8ec6-f6b06b66e57a" />
 
 ---
 
@@ -90,30 +90,6 @@ portfolio/
 
 ---
 
-## 📋 Quick Checklist
-
-Before pushing, replace:
-
-- [ ] `yourusername` → Your GitHub username
-- [ ] `your.email@example.com` → Your email
-- [ ] `Your Name` → Your actual name
-- [ ] Add a screenshot as `screenshots/preview.png`
-
----
-
-## 📂 Files to Create
-
-```
-portfolio/
-├── README.md           ← The file above
-├── requirements.txt    ← Contains: Django>=4.2
-├── .gitignore         ← See below
-└── screenshots/
-    └── preview.png    ← Screenshot of your site
-```
-
----
-
 ## 📄 Simple `.gitignore`
 
 ```gitignore
@@ -135,3 +111,4 @@ db.sqlite3
 ```
 Django>=4.2
 ```
+
