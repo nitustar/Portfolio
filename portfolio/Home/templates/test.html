@@ -1,0 +1,32 @@
+<!-- templates/test.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Test</title>
+</head>
+<body>
+    <h1>Simple Form Test</h1>
+    
+    <form method="POST" action="" , id="contactForm">
+        {% csrf_token %}
+        
+        <label>Name:</label><br>
+        <input type="text" name="name" required><br><br>
+        
+        <label>Email:</label><br>
+        <input type="email" name="email" required><br><br>
+        
+        <button type="submit">Submit</button>
+    </form>
+    
+    <hr>
+    
+    {% if messages %}
+        <h2>Messages:</h2>
+        {% for message in messages %}
+            <p style="color: green;">{{ message }}</p>
+        {% endfor %}
+    {% endif %}
+    
+</body>
+</html>

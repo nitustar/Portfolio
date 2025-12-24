@@ -1,0 +1,931 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Python Backend Developer | Django, REST APIs, AWS, AI/ML Enthusiast | 3+ Years of Experience">
+    <meta name="keywords" content="Python Developer, Django Developer, Backend Developer, REST API, AWS, TCS">
+    <meta name="author" content="Nitesh Kumar">
+    
+    <title>Nitesh Kumar | Python Backend Developer</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+
+    <!-- ============================================
+         LOADER - Shows while page is loading
+    ============================================ -->
+    <div class="loader" id="loader">
+        <div class="loader-spinner"></div>
+    </div>
+
+    <!-- ============================================
+         NAVIGATION BAR
+    ============================================ -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <!-- Logo -->
+            <a href="#home" class="logo">Nitesh Kumar</a>
+            
+            <!-- Navigation Links -->
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="{% static 'documents/cv.pdf' %}" class="btn btn-primary btn-sm">Download CV</a></li>
+            </ul>
+            
+            <!-- Mobile Menu Button -->
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ============================================
+         HERO SECTION - Main Introduction
+    ============================================ -->
+    <section class="hero" id="home">
+        <div class="container">
+            <!-- Left Side - Text Content -->
+            <div class="hero-content" data-aos="fade-right">
+                <p class="tagline">👋 Hello, I'm</p>
+                <h1>Nitesh Kumar<br><span>Python Backend Developer</span></h1>
+                <p class="description">
+                    Backend engineer with 3+ years of experience building scalable APIs, 
+                    automation pipelines, and cloud-native systems using Django, Airflow, AWS, and MSSQL. 
+                    Passionate about integrating AI tools and exploring machine learning applications.
+                </p>
+                
+                <!-- Call to Action Buttons -->
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fas fa-rocket"></i> View My Work
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        <i class="fas fa-envelope"></i> Contact Me
+                    </a>
+                </div>
+                
+                <!-- Social Media Links -->
+                <div class="hero-social">
+                    <a href="https://github.com/nitustar" target="_blank" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/nitesh-kumar-software-dev/" target="_blank" title="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="mailto:nitesh.software.dev@example.com" title="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Right Side - Profile Image -->
+            <div class="hero-image" data-aos="fade-left">
+                <div class="hero-image-wrapper">
+                    <!-- Replace this URL with your actual photo -->
+                    <img src="{% static 'images/photo3.jpeg' %}" 
+                         alt="Nitesh Kumar - Python Backend Developer">
+                    
+                    <!-- Floating Technology Icons -->
+                    <div class="floating-tech python">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <div class="floating-tech django">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <div class="floating-tech aws">
+                        <i class="fab fa-aws"></i>
+                    </div>
+                    <div class="floating-tech database">
+                        <i class="fas fa-database"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         ABOUT SECTION
+    ============================================ -->
+    <section class="about section" id="about">
+        <div class="container">
+            <!-- Left Side - Image -->
+            <div class="about-image" data-aos="fade-right">
+                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=700&fit=crop" 
+                     alt="Developer working on code">
+                <!-- Experience Badge -->
+                <div class="experience-badge">
+                    <span class="number">4+</span>
+                    <span class="text">Years of<br>Experience</span>
+                </div>
+            </div>
+            
+            <!-- Right Side - Content -->
+            <div class="about-content" data-aos="fade-left">
+                <h2>About <span>Me</span></h2>
+                <p>
+                    I'm a passionate Python Backend Developer currently working as a System Engineer 
+                    at <strong>Tata Consultancy Services (TCS)</strong>. With 4+ years of 
+                    hands-on experience, I specialize in building scalable APIs, automation pipelines, 
+                    and cloud-native systems.
+                </p>
+                <p>
+                    My expertise includes Django, Django REST Framework, Apache Airflow, and AWS services. 
+                    I've successfully developed enterprise-level applications serving 1500+ users and 
+                    automated data pipelines that reduced manual intervention by 50%.
+                </p>
+                <p>
+                    I hold a B.Tech in Computer Science from Sharda University and am actively seeking 
+                    impactful roles in innovative, product-driven companies where I can contribute to 
+                    meaningful projects.
+                </p>
+                
+                <!-- Statistics -->
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <span class="number" data-count="20">3</span><span class="plus">+</span>
+                        <span class="label">REST APIs Built</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="number" data-count="1500">2</span><span class="plus">+</span>
+                        <span class="label">Users Served</span>
+                    </div>
+                </div>
+                
+                <a href="{% static 'documents/cv.pdf' %}" class="btn btn-primary">
+                    <i class="fas fa-download"></i> Download Resume
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SKILLS SECTION
+    ============================================ -->
+    <section class="skills section" id="skills">
+        <div class="container">
+            <h2 class="section-title">Technical <span>Skills</span></h2>
+            
+            <!-- Skills Categories -->
+            <div class="skills-categories">
+                
+                <!-- Programming Languages -->
+                <div class="skill-category" data-aos="fade-up">
+                    <h3><i class="fas fa-code"></i> Programming Languages</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">CSS</span>
+                    </div>
+                </div>
+                
+                <!-- Frameworks & Libraries -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                    <h3><i class="fas fa-layer-group"></i> Frameworks & Libraries</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Django</span>
+                        <span class="skill-tag">Django REST Framework</span>
+                        <span class="skill-tag">REST APIs</span>
+                        <span class="skill-tag">Celery</span>
+                        <span class="skill-tag">NumPy</span>
+                        <span class="skill-tag">Pandas</span>
+                    </div>
+                </div>
+                
+                <!-- Databases -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                    <h3><i class="fas fa-database"></i> Databases</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">MSSQL</span>
+                        <span class="skill-tag">PostgreSQL</span>
+                    </div>
+                </div>
+                
+                <!-- Cloud & DevOps -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+                    <h3><i class="fas fa-cloud"></i> Cloud & DevOps</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">AWS Lambda</span>
+                        <span class="skill-tag">AWS S3</span>
+                        <span class="skill-tag">Firebase</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">Unix/Linux</span>
+                    </div>
+                </div>
+                
+                <!-- Tools & IDEs -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="400">
+                    <h3><i class="fas fa-tools"></i> Tools & IDEs</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Apache Airflow</span>
+                        <span class="skill-tag">VS Code</span>
+                        <span class="skill-tag">PyCharm</span>
+                        <span class="skill-tag">Postman</span>
+                        <span class="skill-tag">Azure DevOps</span>
+                        <span class="skill-tag">Putty</span>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <!-- Skills Grid with Icons -->
+            <div class="skills-grid">
+                <div class="skill-card" data-aos="fade-up">
+                    <div class="skill-icon">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <h3>Python</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="90"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="skill-icon django-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Django</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="85"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="skill-icon api-icon">
+                        <i class="fas fa-plug"></i>
+                    </div>
+                    <h3>REST APIs</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="88"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="skill-icon aws-icon">
+                        <i class="fab fa-aws"></i>
+                    </div>
+                    <h3>AWS</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="75"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="skill-icon db-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Databases</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="85"></div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         PROJECTS SECTION
+    ============================================ -->
+    <section class="projects section" id="projects">
+        <div class="container">
+            <h2 class="section-title">Featured <span>Projects</span></h2>
+            
+            <!-- Project Filter Buttons -->
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="django">Django</button>
+                <button class="filter-btn" data-filter="api">APIs</button>
+                <button class="filter-btn" data-filter="aws">AWS</button>
+            </div>
+            
+            <!-- Projects Grid -->
+            <div class="projects-grid">
+                
+                <!-- Project 1: Employee Management System -->
+                <div class="project-card" data-aos="fade-up" data-category="django api">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&h=400&fit=crop" 
+                             alt="Employee Management System">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" target="_blank" title="View Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/yourusername/employee-management" target="_blank" title="View Source Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span>Django DRF</span>
+                            <span>MSSQL</span>
+                            <span>Firebase</span>
+                            <span>REST APIs</span>
+                        </div>
+                        <h3>Employee Management System</h3>
+                        <p>
+                            Scalable system with 5+ modules (Claims, Leave, Roster, Check-in/Out, Reporting) 
+                            serving 1500+ users across 5 roles. Built 20+ REST APIs with 25% performance improvement.
+                        </p>
+                        <ul class="project-features">
+                            <li><i class="fas fa-check"></i> Multi-level claim approvals</li>
+                            <li><i class="fas fa-check"></i> Real-time FCM notifications</li>
+                            <li><i class="fas fa-check"></i> 99.9% data integrity</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Project 2: CSM Management System -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100" data-category="django aws api">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop" 
+                             alt="CSM Management System">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" target="_blank" title="View Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/yourusername/csm-management" target="_blank" title="View Source Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>Airflow</span>
+                            <span>AWS Lambda</span>
+                            <span>S3</span>
+                        </div>
+                        <h3>CSM Management & Automation</h3>
+                        <p>
+                            Automated 10+ data pipelines using Apache Airflow, reducing manual intervention by 50%. 
+                            Managed 100+ monthly data uploads via AWS Lambda triggered from S3.
+                        </p>
+                        <ul class="project-features">
+                            <li><i class="fas fa-check"></i> DAG-based automation</li>
+                            <li><i class="fas fa-check"></i> 20% reduced scheduling delays</li>
+                            <li><i class="fas fa-check"></i> Streamlined ETL processes</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Project 3: REST API Backend -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200" data-category="django api">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&h=400&fit=crop" 
+                             alt="REST API Backend">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" target="_blank" title="API Documentation">
+                                    <i class="fas fa-book"></i>
+                                </a>
+                                <a href="https://github.com/yourusername/rest-api-backend" target="_blank" title="View Source Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span>Django DRF</span>
+                            <span>JWT Auth</span>
+                            <span>PostgreSQL</span>
+                            <span>Swagger</span>
+                        </div>
+                        <h3>RESTful API Backend Template</h3>
+                        <p>
+                            Production-ready Django REST Framework template with JWT authentication, 
+                            role-based access control, API documentation, and comprehensive testing.
+                        </p>
+                        <ul class="project-features">
+                            <li><i class="fas fa-check"></i> JWT Authentication</li>
+                            <li><i class="fas fa-check"></i> Swagger Documentation</li>
+                            <li><i class="fas fa-check"></i> Unit & Integration Tests</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Project 4: Task Scheduler -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="300" data-category="django">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=600&h=400&fit=crop" 
+                             alt="Task Scheduler">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" target="_blank" title="View Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/yourusername/task-scheduler" target="_blank" title="View Source Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span>Django</span>
+                            <span>Celery</span>
+                            <span>Redis</span>
+                            <span>REST API</span>
+                        </div>
+                        <h3>Async Task Scheduler</h3>
+                        <p>
+                            Background task processing system using Celery and Redis for handling 
+                            scheduled jobs, email notifications, and batch processing operations.
+                        </p>
+                        <ul class="project-features">
+                            <li><i class="fas fa-check"></i> Async task processing</li>
+                            <li><i class="fas fa-check"></i> Scheduled jobs</li>
+                            <li><i class="fas fa-check"></i> Task monitoring dashboard</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Project 5: Data Pipeline -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="400" data-category="aws">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1518186285589-2f7649de83e0?w=600&h=400&fit=crop" 
+                             alt="Data Pipeline">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" target="_blank" title="View Documentation">
+                                    <i class="fas fa-book"></i>
+                                </a>
+                                <a href="https://github.com/yourusername/data-pipeline" target="_blank" title="View Source Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>AWS Lambda</span>
+                            <span>S3</span>
+                            <span>Pandas</span>
+                        </div>
+                        <h3>Serverless Data Pipeline</h3>
+                        <p>
+                            AWS-based serverless data pipeline for ETL operations. Automatically processes 
+                            files uploaded to S3, transforms data, and loads into database.
+                        </p>
+                        <ul class="project-features">
+                            <li><i class="fas fa-check"></i> S3 trigger-based processing</li>
+                            <li><i class="fas fa-check"></i> Data transformation</li>
+                            <li><i class="fas fa-check"></i> Error handling & logging</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Project 6: Notification Service -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="500" data-category="django api">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1611746872915-64382b5c76da?w=600&h=400&fit=crop" 
+                             alt="Notification Service">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" target="_blank" title="View Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/yourusername/notification-service" target="_blank" title="View Source Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span>Django</span>
+                            <span>Firebase FCM</span>
+                            <span>REST API</span>
+                            <span>Celery</span>
+                        </div>
+                        <h3>Push Notification Service</h3>
+                        <p>
+                            Centralized notification service using Firebase Cloud Messaging for sending 
+                            push notifications to mobile apps with 30% increased user engagement.
+                        </p>
+                        <ul class="project-features">
+                            <li><i class="fas fa-check"></i> Firebase FCM integration</li>
+                            <li><i class="fas fa-check"></i> Bulk notifications</li>
+                            <li><i class="fas fa-check"></i> Notification analytics</li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <!-- View More Button -->
+            <div class="projects-cta" data-aos="fade-up">
+                <a href="https://github.com/yourusername" target="_blank" class="btn btn-outline">
+                    <i class="fab fa-github"></i> View All Projects on GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         EXPERIENCE SECTION
+    ============================================ -->
+    <section class="experience section" id="experience">
+        <div class="container">
+            <h2 class="section-title">Work <span>Experience</span></h2>
+            
+            <!-- Timeline -->
+            <div class="timeline">
+                
+                <!-- Experience 1: Current Role -->
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <span class="date">April 2021 - Present</span>
+                            <span class="company-badge">Current</span>
+                        </div>
+                        <h3>System Engineer</h3>
+                        <p class="company">
+                            <i class="fas fa-building"></i> Tata Consultancy Services Pvt. Ltd
+                        </p>
+                        
+                        <!-- Role 1 -->
+                        <div class="role-section">
+                            <h4>Software Developer | Employee Management System</h4>
+                            <p class="tech-stack">
+                                <strong>Tech:</strong> Python, Django REST Framework, MSSQL, Firebase, REST APIs
+                            </p>
+                            <ul class="achievements">
+                                <li>Developed a scalable Employee Management System with 5+ functional modules serving 1500+ users across 5 roles</li>
+                                <li>Built and optimized 20+ REST APIs with Django DRF, improving performance by 25%</li>
+                                <li>Implemented multi-level claim approvals and bulk processing features</li>
+                                <li>Integrated Firebase Cloud Messaging (FCM) for real-time alerts, increasing user engagement by 30%</li>
+                                <li>Managed MSSQL database maintaining 99.9% data integrity</li>
+                                <li>Delivered 40+ issue resolutions monthly, ensuring 99.9% system uptime</li>
+                                <li>Improved high-traffic uptime by 30% through server scaling</li>
+                            </ul>
+                        </div>
+                        
+                        <!-- Role 2 -->
+                        <div class="role-section">
+                            <h4>Python Developer | CSM Management</h4>
+                            <p class="tech-stack">
+                                <strong>Tech:</strong> Python, Airflow, Django, MySQL, AWS (Lambda, S3)
+                            </p>
+                            <ul class="achievements">
+                                <li>Collaborated with 2 cross-functional teams, improving system workflows by 15%</li>
+                                <li>Automated 10+ data pipelines using Apache Airflow, reducing manual intervention by 50%</li>
+                                <li>Managed 100+ monthly data uploads via AWS Lambda functions triggered from S3</li>
+                                <li>Improved scheduler backend logic, reducing scheduling delays by 20%</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <!-- Education Section -->
+            <div class="education-section" data-aos="fade-up">
+                <h3 class="subsection-title"><i class="fas fa-graduation-cap"></i> Education</h3>
+                
+                <div class="education-card">
+                    <div class="education-icon">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <div class="education-content">
+                        <h4>Bachelor of Technology</h4>
+                        <p class="degree">Computer Science</p>
+                        <p class="university">
+                            <i class="fas fa-map-marker-alt"></i> Sharda University, Greater Noida
+                        </p>
+                        <p class="cgpa">
+                            <i class="fas fa-star"></i> CGPA: 7.1
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         CONTACT SECTION
+    ============================================ -->
+    <section class="contact section" id="contact">
+        <div class="container">
+            <!-- Section Header -->
+            <h2 class="section-title">Get In <span>Touch</span></h2>
+            
+            <div class="contact-wrapper">
+                <!-- Contact Information -->
+                <div class="contact-info" data-aos="fade-right">
+                    <h3>Let's Work Together</h3>
+                    <p>
+                        I'm actively seeking impactful roles in innovative, product-driven companies. 
+                        Feel free to reach out if you'd like to collaborate or discuss opportunities!
+                    </p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="info">
+                                <h4>Email</h4>
+                                <p>nitesh.software.dev@example.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="info">
+                                <h4>Phone</h4>
+                                <p>+91 9097738880</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="info">
+                                <h4>Location</h4>
+                                <p>Vadodara, India</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Social Links -->
+                    <div class="contact-social">
+                        <h4>Find Me On</h4>
+                        <div class="social-links">
+                            <a href="https://github.com/yourusername" target="_blank" title="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://linkedin.com/in/yourusername" target="_blank" title="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://twitter.com/yourusername" target="_blank" title="Twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="https://leetcode.com/yourusername" target="_blank" title="LeetCode">
+                                <i class="fas fa-code"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Contact Form -->
+                <form method="POST" class="contact-form" id="contactForm" data-aos="fade-left">
+                    {% csrf_token %}
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" placeholder="name.email@example.com" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="Job Opportunity / Project Discussion" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" placeholder="Tell me about your project or opportunity..." required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+        CONTACT SECTION - UPDATED FOR DJANGO
+    ============================================ -->
+    {% comment %} <section class="contact section" id="contact">
+        <div class="container">
+            <!-- Section Header -->
+            <h2 class="section-title">Get In <span>Touch</span></h2>
+            
+            <div class="contact-wrapper">
+                <!-- Contact Information (Left Side) -->
+                <div class="contact-info" data-aos="fade-right">
+                    <h3>Let's Work Together</h3>
+                    <p>
+                        I'm actively seeking impactful roles in innovative, product-driven companies. 
+                        Feel free to reach out if you'd like to collaborate or discuss opportunities!
+                    </p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="info">
+                                <h4>Email</h4>
+                                <p>nitesh.software.dev@gmail.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="info">
+                                <h4>Phone</h4>
+                                <p>+91 9097738880</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="info">
+                                <h4>Location</h4>
+                                <p>Bangalore, India</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Social Links -->
+                    <div class="contact-social">
+                        <h4>Find Me On</h4>
+                        <div class="social-links">
+                            <a href="https://github.com/nitustar" target="_blank" title="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://linkedin.com/in/nitesh-kumar-software-dev/" target="_blank" title="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://leetcode.com/yourusername" target="_blank" title="LeetCode">
+                                <i class="fas fa-code"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- ========================================
+                    CONTACT FORM - DJANGO INTEGRATION
+                ======================================== -->
+                <form class="contact-form" 
+                    method="POST" 
+                    action="{% url 'add_contact' %}"
+                    data-aos="fade-left">
+                    
+                    {% csrf_token %}
+                    
+                    {% if messages %}
+                        {% for message in messages %}
+                            <div class="alert alert-success">
+                                <i class="fas fa-check-circle"></i> {{ message }}
+                            </div>
+                        {% endfor %}
+                    {% endif %}
+                    
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" placeholder="John Doe" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="Project Discussion" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" placeholder="Tell me about your project..." required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section> {% endcomment %}
+
+
+    <!-- ============================================
+         FOOTER
+    ============================================ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Brand -->
+                <div class="footer-brand">
+                    <a href="#home" class="logo">Nitesh Kumar </a>
+                    <p>
+                        Python Backend Developer passionate about building scalable APIs 
+                        and cloud-native systems. Let's create something amazing together!
+                    </p>
+                    <div class="footer-social">
+                        <a href="https://github.com/nitustar" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/nitesh-kumar-software-dev/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="mailto:nitesh.software.dev@example.com"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Technologies -->
+                <div class="footer-links">
+                    <h4>Technologies</h4>
+                    <ul>
+                        <li><a href="https://docs.python.org/3/tutorial/index.html">Python</a></li>
+                        <li><a href="https://www.djangoproject.com/start/">Django</a></li>
+                        <li><a href="https://restfulapi.net/">REST APIs</a></li>
+                        <li><a href="https://aws.amazon.com/getting-started/hands-on/">AWS</a></li>
+                        <li><a href="https://www.postgresql.org/docs/current/tutorial.html">PostgreSQL</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Resources -->
+                <div class="footer-links">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Resume</a></li>
+                        <li><a href="https://github.com/nitustar" target="_blank">GitHub</a></li>
+                        <li><a href="https://linkedin.com/in/nitesh-kumar-software-dev/" target="_blank">LinkedIn</a></li>
+                        <li><a href="#">Blog (Coming Soon)</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <p>&copy; 2025 Nitesh Kumar. All rights reserved.</p>
+                <p>Made with <i class="fas fa-heart"></i> using Django & Python</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================================
+         SCROLL TO TOP BUTTON
+    ============================================ -->
+    <button class="scroll-top" id="scrollTop" title="Back to Top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- ============================================
+         SCRIPTS
+    ============================================ -->
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="static/js/script.js"></script>
+</body>
+</html>
